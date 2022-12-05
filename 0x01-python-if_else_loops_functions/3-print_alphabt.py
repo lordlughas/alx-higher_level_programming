@@ -1,11 +1,4 @@
 #!/usr/bin/python3
-"""
-Print the ASCII alphabet in lowercase, not followed by a new line.
-"""
-for letter in range(97, 123):
-    if (letter == 101):
-        continue
-    elif (letter == 113):
-        continue
-    else:
-        print(f"{chr(letter)}", end="")
+for letter in range(ord('a'), ord('z') + 1):
+    if letter != 113 and letter != 101:
+        print('{}'.format(chr(letter)), end='')
