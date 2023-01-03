@@ -7,5 +7,5 @@ def uniq_add(my_list=[]):
     output = 0
     for idx in set(my_list):
         output += idx
-    return output
+    return (output)
 
